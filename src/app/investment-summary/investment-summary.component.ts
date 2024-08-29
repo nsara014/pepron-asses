@@ -3,6 +3,9 @@ import { NgIf, NgFor, CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import * as cheerio from 'cheerio';
+import { isPlatformBrowser } from '@angular/common';
+import { Inject, PLATFORM_ID } from '@angular/core';
+
 interface TimelineEvent {
   date: string;
   title: string;
@@ -68,8 +71,22 @@ export class InvestmentSummaryComponent implements OnInit {
   showAllRisks = false;
   riskDetailsTop = 0;
   timeLine: any[] = [];
+  isBrowser: boolean;
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+
+    if (this.isBrowser) {
+      // Only execute browser-specific code here
+      console.log('Running in the browser');
+      // You can safely use browser-specific objects like `window`, `document`, etc., here
+    } else {
+      console.log('Running on the server');
+    }
+  }
 
   ngOnInit(): void {
     this.loadTeamMembers();
