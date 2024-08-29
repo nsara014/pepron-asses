@@ -1,0 +1,66 @@
+.company-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5em;
+}
+
+.company-logo-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.company-actions {
+  display: flex;
+  align-items: center;
+}
+
+.invest-button {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.follow-section {
+  display: flex;
+  align-items: center;
+}
+
+.follow-button {
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.follower-count {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}

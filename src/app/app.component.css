@@ -1,0 +1,7 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Adjust to your preferred font */
+}
+/* styles.css (global styles file) */
+html {
+  scroll-behavior: smooth;
+}

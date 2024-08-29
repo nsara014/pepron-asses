@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Rajini Anachi",
+    "role": "Founder",
+    "description": "2x founder, previously founded CyGlass, which was acquired by Nominet in 2020. Focused on bringing tremendous value to AvaWatz customers, employees, and investors.",
+    "image": "https://uploads.republic.com/p/roles/team_members/avatars/large/000/019/586/19586-1708105097-b598900ea74dd0b98c591810d26b3bdc0e1c0665.jpg",
+    "linkedin": "https://www.linkedin.com/in/rajini-anachi/"
+  },
+  {
+    "name": "Bala Jana",
+    "role": "Co-Founder, Board Member",
+    "description": "Investor and early team member at several start-ups acquired by Fortune 500 companies. Leading product innovation, commercialization, and product-market fit.",
+    "image": "https://uploads.republic.com/p/roles/team_members/avatars/large/000/020/313/20313-1707608322-2e202f3e82387bd8b0fa4b7cad6a47e105918f87.JPG",
+    "linkedin": ""
+  },
+  {
+    "name": "JR May",
+    "role": "Business Development & Sales",
+    "description": "Proven expertise in DoD and commercial sales. Brings an extensive network of connections for direct sales, partnerships, and rapidly scaling for growth.Previously led business development at mZeal/Cyglass (acquired by Nominet in 2020)",
+    "image": "https://uploads.republic.com/p/roles/team_members/avatars/large_2x/000/020/550/20550-1708105159-f91d195bdbf81b66c2523449144cc58baafdbd08.jpg",
+    "linkedin": ""
+  },
+  {
+    "name": "Rishabh Iyer",
+    "role": "AI Researcher",
+    "description": "Dr. Rishabh Iyer, an Asst. Professor at the University of Texas, Dallas. Dr. Iyer specializes in efficient machine learning (ML) and advanced combinatorial optimization and information theory. He has won several awards and fellowships over the years.",
+    "image": "https://uploads.republic.com/p/roles/team_members/avatars/large/000/020/551/20551-1708105205-b9277da969caf010a2e82be7a6f5f52426c04441.png",
+    "linkedin": ""
+  },
+  {
+    "name": "John McKendry",
+    "role": "Product Development",
+    "description": "John McKendry has a strong background in real-time control systems, artificial intelligence for multi-sensor analysis, and autonomous edge computing.Was instrumental in architecting the cognitive engine at mZeal/Cyglass.",
+    "image": "https://uploads.republic.com/p/roles/team_members/avatars/large/000/020/552/20552-1708046932-d553d17d25e6c34f358acf6e75dccfc597b31b0e.jpg",
+    "linkedin": ""
+  },
+  {
+    "name": "Ajay Jain",
+    "role": "Operations Manager",
+    "description": "Has over two decades of experience in IT consulting operations and five years as a corporate secretary in investment banking. Expertise in relationship management, talent acquisition, process optimization, legal compliance, and digital marketing.",
+    "image": "https://uploads.republic.com/p/roles/team_members/avatars/large/000/020/585/20585-1708105219-844ef776747c2543d7b9824f8559f6152a57d7a4.jpg",
+    "linkedin": ""
+  },
+  {
+    "name": "Walter Rawle",
+    "role": "Sensors, AI & Autonomous Systems SME",
+    "description": "Dr. Walter Rawle has experience across a wide spectrum of domains including, multiple sensor physics, robotic hardware interfaces, advanced combinatorial machine learning, stochastic analysis, position-navigation-timing for GPS-denied.",
+    "image": "https://uploads.republic.com/p/roles/team_members/avatars/large/000/020/586/20586-1708047563-5c9b7cbf1951e094313d430af1119ef1e0ab3f08.jpeg",
+    "linkedin": ""
+  },
+  {
+    "name": "Neil Wadhwani",
+    "role": "Sales & Marketing Advisor",
+    "description": "Neal has 25+ years of experience in Sales and Marketing in Fortune 500 companies. Over the course of his career, his focus has been Technology Sales, Presales, ITOps, Digital Marketing, and executive leadership experience with high-growth startups.",
+    "image": "https://uploads.republic.com/p/roles/team_members/avatars/large/000/020/587/20587-1708047643-21aeee76d5a0aa45f2832e53bf445cacf79fb307.jpeg",
+    "linkedin": ""
+  }
+]

@@ -1,0 +1,898 @@
+<div class="navbar">
+  <div class="container">
+    <button
+      (click)="showSection('pitch')"
+      [class.active]="activeSection === 'pitch'"
+    >
+      Pitch
+    </button>
+    <button
+      (click)="showSection('updates')"
+      [class.active]="activeSection === 'updates'"
+    >
+      Updates
+    </button>
+  </div>
+</div>
+
+<div *ngIf="activeSection === 'pitch'" class="section-content">
+  <div class="investment-summary-container">
+    <div class="investment-summary-left">
+      <nav class="sidebar" *ngIf="showSidebar">
+        <!-- Navigation Links -->
+        <a href="#invsumm">Investment</a>
+        <a href="#pitch-text">Pitch</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#Opportunity">Opportunity</a>
+        <a href="#Business model">Business model</a>
+        <a href="#Competition">Competition</a>
+        <a href="#Summary">Summary</a>
+        <a href="#Disclaimers">Disclaimer</a>
+        <hr />
+        <a href="#AboutTeam">About</a>
+        <a href="#Team">The Team</a>
+        <a href="#Press">Press</a>
+        <a href="#PRisks">Risk</a>
+        <!-- Add more links as needed -->
+      </nav>
+      <section id="invsumm">
+        <h2>Investment summary</h2>
+        <hr class="divider" />
+        <ul>
+          <li>
+            $4.5M+ funding raised, including $2.3M+ R&D funding from US Defense
+          </li>
+          <li>The US Air Force and Army are using our technology</li>
+          <li>
+            Beta launch of GENIE: Key to Precision & Efficiency in AI/ML Model
+            Training
+          </li>
+          <li>Q2 '24 FALCON: Trustworthy AI and ML for Robot Teams</li>
+          <li>The current Sales Pipeline is over $16M</li>
+          <li>The AI market is predicted to reach $1.07Trillion by 2027</li>
+          <li>The global Robotic market is predicted to reach $141B by 2027</li>
+        </ul>
+        <div class="alldisc">
+          <p class="disclaimer">
+            OpenDeal Broker LLC charges you a two percent (2%) administrative
+            fee on the gross principal transaction with a minimum fee of $5 and
+            a maximum of $300. The fee is added to the total amount of your
+            investment at checkout.
+          </p>
+          <p class="disclaimer">
+            Past financial results are no guarantee of future performance.
+            <a
+              href="https://republic.com/help/forward-looking-financial-projections-disclaimer-31098212479"
+              target="_blank"
+              rel="nofollow"
+              >Click here for important information regarding Financial
+              Projections</a
+            >
+            which are not guaranteed.
+          </p>
+          <p class="disclaimer">
+            Investments in private companies are particularly risky and may
+            result in total loss of invested capital.
+          </p>
+          <p class="disclaimer">
+            <a
+              href="https://republic.com/risksRisks"
+              target="_blank"
+              rel="nofollow"
+            >
+              Risks of early stage investment</a
+            >. Not an offer to buy or sell securities. This is a long-term
+            speculative illiquid investment. Investment is not FDIC or SiPC
+            insured.
+          </p>
+          <p class="disclaimer">
+            There may be other available opportunities that are similar to this
+            investment but have different
+            <span *ngIf="!visibleSections['disclaimer']">
+              ...
+              <a
+                href="#"
+                (click)="toggleSectionVisibility('disclaimer', $event)"
+                >Read more</a
+              >
+            </span>
+            <span *ngIf="visibleSections['disclaimer']">
+              attributes, characteristics, cost factors, and fees.
+              <br />
+              <a
+                href="https://republic.com/help/forward-looking-financial-projections-disclaimer-31098212479"
+                target="_blank"
+                rel="nofollow"
+              >
+                <img
+                  src="https://lh7-us.googleusercontent.com/Svi1opUPvq7ultL1IjAhw-MEjGCfuPZMBe0OD_ToTyJ_CcmAzt_LGjyvNwNG3XTDuIlUY6YJFktzZD1s2JWS0NDHdT4vo9pPpoIaKsHYx04z0Pb5GljgwLKubdiQokz8yk8C2KZswBVFe10VNUmnyi0"
+                  alt="Financial Projections Disclaimer"
+                  class="disclaimer-image"
+                />
+              </a>
+            </span>
+          </p>
+        </div>
+      </section>
+      <div class="pitch-text">
+        <section id="pitch-text">
+          <h2>Pitch</h2>
+          <hr class="divider" />
+          <h2>AvaWatz: Unlocking the Power of AI Robotics</h2>
+          <h3>
+            At AvaWatz, we aim to unlock the true potential of robotics with our
+            trusted AI platform. Our AI empowers robots to work together like
+            teammates in harsh, unpredictable environments, freeing humans from
+            danger and high-risk tasks. We aim to make robots smarter and safer,
+            boosting efficiency and keeping humans out of harm's way. Think
+            advanced AI for robotics that tackles inspections, maintenance, and
+            more, all delivered through our easy-to-use platform.
+          </h3>
+          <img
+            src="https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/117/816/117816-1706917520-5d2b172ad3b931c2bce2d919031d65ad9f8dbb81.png"
+            alt="pitch text"
+            class="pitch-image"
+          />
+        </section>
+      </div>
+      <section id="leadership">
+        <div class="leadership">
+          <h2>Leadership</h2>
+          <hr class="divider" />
+          <h2>
+            Meet the Minds Behind AvaWatz: A Team Built for AI Robotics
+            Brilliance
+          </h2>
+          <img
+            src="https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/129/468/129468-1713375773-c656b2263c540b9a75a0b6a227271fedd6389d99.jpg"
+            alt="Leadership"
+            class="pitch-image"
+          />
+          <h3>
+            AvaWatz isn't just about the future of robotics. It's about the
+            visionary minds making that future a reality. Led by a diverse group
+            of seasoned innovators, entrepreneurs, and AI experts, this team
+            possesses the firepower to revolutionize collaborative robots.
+          </h3>
+          <h3>
+            <strong>Dr. Rajini Anachi, Founder & CEO:</strong> A serial
+            innovator in AI and robotics, Rajini has conquered challenges across
+            industries, from defense to mining to cybersecurity. With a passion
+            for empowering robots to work like teams, her vision is to redefine
+            safety and efficiency with intelligent collaboration.
+          </h3>
+          <h3>
+            <strong>Bala Jana, Co-Founder & Board Member:</strong> A seasoned
+            investor and veteran of start-up success, Bala brings a track record
+            of driving product innovation and market fit. His expertise ensures
+            AvaWatz delivers solutions that resonate, paving the way for rapid
+            growth.
+            <span *ngIf="!visibleSections['leadership']">
+              ...
+              <a
+                href="#"
+                (click)="toggleSectionVisibility('leadership', $event)"
+                >Read more</a
+              >
+            </span>
+            <span *ngIf="visibleSections['leadership']">
+              <br />
+              <strong>J.R. May, Business Development & Sales:</strong> With a
+              proven record of success in both DoD and commercial sales, J.R.
+              boasts an extensive network that fuels AvaWatz's market reach. His
+              leadership translates into direct sales, strategic partnerships,
+              and rapid scaling.<br />
+              <strong>Dr. Rishabh Iyer, AI Researcher:</strong> As an Assistant
+              Professor at UT Dallas, Dr. Iyer brings academic rigor and
+              cutting-edge research to AvaWatz. His expertise in efficient
+              machine learning and optimization ensures the AI powering AvaWatz
+              robots is always at the forefront.<br />
+              Our dynamic team embodies the spirit of AvaWatz: driven,
+              innovative, and dedicated to pushing the boundaries of what's
+              possible. With our combined expertise and passion, we feel we're
+              on track to unleash a paradigm shift in AI robotics, paving the
+              way for a safer, more efficient future for all.
+            </span>
+          </h3>
+        </div>
+      </section>
+      <section id="Opportunity">
+        <div class="opportunity">
+          <h2>Opportunity</h2>
+          <hr class="divider" />
+          <h2>Unleash the Power of Collaborative Robots</h2>
+
+          <h3>
+            Today, countless "dirty, dull, and dangerous" tasks still fall on
+            human shoulders. Hazardous inspections, disaster response, and
+            infrastructure maintenance--these crucial but risky jobs put lives
+            at stake and limit productivity. While robots excel at specific
+            tasks, they often struggle to cooperate in unstructured
+            environments. Changing weather, shifting terrain, and unpredictable
+            conditions can throw traditional robots off balance.
+          </h3>
+          <img
+            src="https://lh7-us.googleusercontent.com/Tcm_tisMQ5c3QOd6nQnnHkg0-zFFU4CThf5nzyLCR6YAdbvbT5a7bxOI9xpeiAvq8CXPke_DGHd6gJ_gvrOJqNJFlNpuW5I_7Dvk6c27OJoOD1iKBHI4IS0uMda3zcx2gBMOaGO30NLrFexoPruiEuk"
+            alt="Opportunity"
+            class="pitch-image"
+          />
+          <h3>
+            AvaWatz provides a solution with our leading-edge AI platform that
+            equips robots with the ability to communicate, strategize, and adapt
+            on the fly. Robots powered by our trusted AI can share data and
+            insights in real-time, participate in joint decision-making efforts,
+            <span *ngIf="!visibleSections['opportunity']">
+              ...
+              <a
+                href="#"
+                (click)="toggleSectionVisibility('opportunity', $event)"
+                >Read more</a
+              >
+            </span>
+            <span *ngIf="visibleSections['opportunity']">
+              coordinate their actions seamlessly, and adjust to changing
+              conditions. <br />This means that robots can take on the hard
+              stuff while humans stay safe and focus on higher-level tasks. No
+              more sending engineers into perilous pipelines. No more putting
+              first responders in harm's way. With AvaWatz, robots can
+              collaborate and solve problems, boosting safety and efficiency
+              across industries.
+            </span>
+          </h3>
+        </div>
+      </section>
+      <section id="MarketTraction">
+        <div class="MarketTraction">
+          <h2>Market & Traction</h2>
+          <hr class="divider" />
+          <h2>
+            A $1.2 Trillion Opportunity: AvaWatz Takes on the Future of AI
+            Robotics
+          </h2>
+
+          <h3>
+            AvaWatz is tapping into a massive $1.2 Trillion combined market
+            hungry for exactly what it offers: collaborative robotic solutions.
+          </h3>
+          <img
+            src="https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/122/096/122096-1709066421-b18b70487d79acb429c4eb84e32455969adabfac.png"
+            alt="Leadership"
+            class="pitch-image"
+          />
+          <h3>
+            Here's why this opportunity is bigger than robots:
+            <ul>
+              <li>
+                The Global AI Market is Booming: Projected to reach $1.07
+                Trillion by 2027, AI is fueling the demand for smarter, more
+                sophisticated solutions.
+                <a
+                  href="https://www.precedenceresearch.com/artificial-intelligence-market"
+                  target="_blank"
+                  rel="nofollow"
+                  >(Source)</a
+                >
+              </li>
+              <li>
+                Robots are Teaming Up: The need for autonomous mobile robots and
+                intelligent collaboration is exploding across industries, from
+                smart airports to infrastructure maintenance, expected to
+                collectively reach $634 billion by 2026. (<a
+                  href="https://www.grandviewresearch.com/press-release/global-smart-airports-market#:~:text=The%20global%20smart%20airport%20market%C2%A0size%20is%20expected%20to%20reach%20USD%2025.09%20billion%20by%202025"
+                  target="_blank"
+                  rel="nofollow"
+                  >Source</a
+                >
+                |
+                <a
+                  href="https://www.prnewswire.com/news-releases/global-634-billion-transit-and-ground-passenger-transport-market-to-2025-with-long-term-forecast-to-2030-301335582.html#:~:text=The%20market%20is%20expected%20to%20reach%20%24634.99%20billion%20in%202025%20at%20a%20CAGR%20of%208%25."
+                  rel="nofollow"
+                  >Source</a
+                >)
+              </li>
+              <li>
+                The robotics market is experiencing unprecedented growth
+                propelled by a surge in investments
+
+                <span *ngIf="!visibleSections['market']">
+                  ...
+                  <a
+                    href="#"
+                    (click)="toggleSectionVisibility('market', $event)"
+                    >Read more</a
+                  >
+                </span>
+                <span *ngIf="visibleSections['market']">
+                  coupled with the widespread adoption of service robots
+                  globally and escalating demand for industrial robots. This
+                  momentum is anticipated to propel the market to reach a
+                  staggering $141 billion by the year 2027(<a
+                    href="https://www.precedenceresearch.com/robotics-technology-market"
+                    >Source</a
+                  >)<br />
+                  Our leading-edge Trusted AI platform empowers robots to work
+                  together in harsh environments, from hazardous material
+                  tracking to infrastructure maintenance, all while keeping
+                  humans safe. AvaWatz sits at the intersection of these trends,
+                  addressing a combined $1.2 trillion market ready for
+                  innovation.
+                </span>
+              </li>
+            </ul>
+          </h3>
+        </div>
+      </section>
+      <section id="Business model">
+        <div class="Businessmodel">
+          <h2>Business model</h2>
+          <hr class="divider" />
+
+          <h3>
+            The company’s business model consists of subscription services
+            (SaaS) with Service Level (SL) focused on three areas of market
+            verticals: Inspection & Maintenance, Surveillance, and Early Warning
+            for Safety. The airfield flight line operation is one of the
+            solutions under the Inspection & Maintenance track. Our services can
+            potentially benefit commercial markets, both the private sector and
+            the US military. The contract duration is from 1 year to 5 years
+            long.
+          </h3>
+        </div>
+      </section>
+      <section id="Competition">
+        <div class="Competition">
+          <h2>Competition</h2>
+          <hr class="divider" />
+
+          <h3>
+            AvaWatz is in the service robots industry. The International
+            Organization for Standardization defines a “service robot” as a
+            robot “that performs useful tasks for humans or equipment excluding
+            industrial automation applications.” Service robots typically
+            perform tedious, tiring, or dangerous tasks for humans. Indirect
+            competitors in this industry are Locus Robotics, InVia Robotics in
+            warehouse operation, Badger Technologies in retail inventory, and
+            Savioke for indoor delivery-hospitality. There are drone
+            manufacturers such as DJI, Parrot, Skydio, and ground robot
+            manufacturers such as Boston Dynamics who would be better partners
+            than competitors. AvaWatz started out to build robotics for airfield
+            flightline operations, and we realized that
+            <span *ngIf="!visibleSections['competition']">
+              ...
+              <a
+                href="#"
+                (click)="toggleSectionVisibility('competition', $event)"
+                >Read more</a
+              >
+            </span>
+            <span *ngIf="visibleSections['competition']">
+              we could solve the customer’s problem better and more completely
+              by using robots that work together to do different parts of the
+              task, with some robots optimized for finding debris and others
+              optimized for disposing of the debris. This focus on building
+              teams of robots with different capabilities to perform complex
+              tasks is what sets us apart from others in the industry.
+            </span>
+          </h3>
+        </div>
+      </section>
+      <section id="Summary">
+        <div class="Summary">
+          <h2>Summary</h2>
+          <hr class="divider" />
+          <div class="video-container">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              class="fr-draggable fr-fvc fr-dvi"
+              src="https://uploads.republic.com/p/videos/attachments/original/000/004/233/4233-1708099267-96f54db3e02f1a2f579c7b629e605860889311c3.mp4"
+              style="width: 100%; height: auto"
+            >
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </section>
+      <section id="Disclaimers">
+        <div class="Disclaimers">
+          <h2>Disclaimers</h2>
+          <hr class="divider" />
+
+          <p style="word-spacing: 0.08em; line-height: 1.7; margin: 20px 0">
+            Certain information set forth in this presentation contains
+            “forward-looking information”, including “future-oriented financial
+            information” and “financial outlook”, under applicable securities
+            laws (collectively referred to herein as forward-looking
+            statements). Except for statements of historical fact, the
+            information contained herein constitutes forward-looking statements
+            and includes, but is not limited to, the (i) projected financial
+            performance of the Company; (ii) completion of, and the use of
+            proceeds from, the sale of the shares being offered hereunder; (iii)
+            the expected development of the Company's business, projects, and
+            joint ventures; (iv) execution of the Company's vision and growth
+            strategy, including with respect to future
+            <span *ngIf="!visibleSections['competition']">
+              ...
+              <a
+                href="#"
+                (click)="toggleSectionVisibility('competition', $event)"
+                >Read more</a
+              >
+            </span>
+            <span *ngIf="visibleSections['competition']">
+              M&A activity and global growth; (v) sources and availability of
+              third-party financing for the Company's projects; (vi) completion
+              of the Company's projects that are currently underway, in
+              development or otherwise under consideration; (vi) renewal of the
+              Company's current customer, supplier and other material
+              agreements; and (vii) future liquidity, working capital, and
+              capital requirements. Forward-looking statements are provided to
+              allow potential investors the opportunity to understand
+              management's beliefs and opinions in respect of the future so that
+              they may use such beliefs and opinions as one factor in evaluating
+              an investment. <br /><br />
+              These statements are not guarantees of future performance and
+              undue reliance should not be placed on them. Such forward-looking
+              statements necessarily involve known and unknown risks and
+              uncertainties, which may cause actual performance and financial
+              results in future periods to differ materially from any
+              projections of future performance or result expressed or implied
+              by such forward-looking statements. <br /><br />Although
+              forward-looking statements contained in this presentation are
+              based upon what management of the Company believes are reasonable
+              assumptions, there can be no assurance that forward-looking
+              statements will prove to be accurate, as actual results and future
+              events could differ materially from those anticipated in such
+              statements. The Company undertakes no obligation to update
+              forward-looking statements if circumstances or management's
+              estimates or opinions should change except as required by
+              applicable securities laws. The reader is cautioned not to place
+              undue reliance on forward-looking statements.
+            </span>
+          </p>
+        </div>
+      </section>
+      <div class="investment-input-container">
+        <div class="input-overlay-container">
+          <span class="currency-symbol">$</span>
+          <input
+            type="number"
+            class="investment-input"
+            min="2500"
+            [(ngModel)]="investmentAmount"
+            (input)="validateInput($event)"
+          />
+          <span class="input-overlay" *ngIf="!investmentAmount">2500 min</span>
+        </div>
+        <button
+          class="invest-button"
+          [disabled]="!isValidAmount"
+          (click)="invest()"
+        >
+          Invest in AvaWatz
+        </button>
+      </div>
+    </div>
+
+    <div class="investment-summary-right">
+      <div class="deal-terms-section">
+        <h2>Deal terms</h2>
+        <a href="https://republic.com/avawatz#"
+          ><span class="special-tag"
+            ><i class="fas fa-bolt"></i>SPECIAL</span
+          ></a
+        >
+        <hr class="divider" />
+        <ul class="deal-terms">
+          <li class="funds-raised">
+            Funds Raised
+            <span>$163,247 <i class="info-icon fas fa-info-circle"></i></span>
+          </li>
+          <li>
+            Allocation
+            <span>$5M <i class="info-icon fas fa-info-circle"></i></span>
+          </li>
+          <li>
+            Valuation
+            <span>$80.85M <i class="info-icon fas fa-info-circle"></i></span>
+          </li>
+          <li>
+            Share price
+            <span>
+              <i class="fas fa-bolt"></i>
+              <span style="color: red">$3</span>
+              <del>$4</del>
+              <i class="info-icon fas fa-info-circle"></i>
+            </span>
+          </li>
+          <li>
+            Security type
+            <span
+              >Preferred Shares <i class="info-icon fas fa-info-circle"></i
+            ></span>
+          </li>
+          <li>
+            Minimum investment
+            <span>$2,500 <i class="info-icon fas fa-info-circle"></i></span>
+          </li>
+          <li>
+            Deadline
+            <span
+              >November 1, 2024<i class="info-icon fas fa-info-circle"></i
+            ></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="documents-section">
+        <h2>Documents</h2>
+        <hr class="divider" />
+        <div class="documents-container">
+          <div class="document-description">
+            <p>
+              Capital R (OpenDeal Broker LLC, CRD #291387) is hosting this Reg D
+              506(c) securities offering by AvaWatz Company.
+            </p>
+          </div>
+          <div class="document-list">
+            <p>Company documents</p>
+            <ul>
+              <li class="document-link">
+                <a
+                  href="https://uploads.republic.com/p/offerings/security_attachments/original/000/009/211/9211-1714599637-3fe52f67c983efb909d8885e0993170b94c9fc3c.pdf"
+                  ><i class="fas fa-file-alt"></i> Subscription Agreement</a
+                >
+              </li>
+              <li class="document-link">
+                <a href="https://republic.com/documents/10755"
+                  ><i class="fas fa-file-alt"></i> AvaWatz PPM Supplement
+                  #3.pdf</a
+                >
+              </li>
+              <li class="document-link">
+                <a href="https://republic.com/documents/10023"
+                  ><i class="fas fa-file-alt"></i> AvaWatz PPM Supplement
+                  #2.pdf</a
+                >
+              </li>
+              <li class="document-link">
+                <a href="https://republic.com/documents/9397"
+                  ><i class="fas fa-file-alt"></i> AvaWatz Reg D PPM Supplement
+                  #1 (05.28.24).pdf</a
+                >
+              </li>
+              <li class="document-link">
+                <a href="https://republic.com/documents/9125"
+                  ><i class="fas fa-file-alt"></i> Avawatz Company PPM.pdf</a
+                >
+              </li>
+              <li class="document-link">
+                <a href="https://republic.com/documents/8944"
+                  ><i class="fas fa-file-alt"></i> Form CRS.pdf</a
+                >
+              </li>
+              <li class="document-link">
+                <a href="https://republic.com/documents/8943"
+                  ><i class="fas fa-file-alt"></i> Accreditation FAQs.pdf</a
+                >
+              </li>
+              <li class="document-link">
+                <a href="https://republic.com/documents/8942"
+                  ><i class="fas fa-file-alt"></i> Disclosures &
+                  Disclaimers.pdf</a
+                >
+              </li>
+              <li class="document-link">
+                <a href="https://republic.com/documents/8941"
+                  ><i class="fas fa-file-alt"></i> Additional Risk
+                  Disclosures.pdf</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bonus-perks-section">
+        <h2>Bonus perks</h2>
+        <hr class="divider" />
+        <p>
+          In addition to your shares, you'll receive perks for investing in
+          Avawatz.
+        </p>
+
+        <div class="bonus-perk">
+          <h3>Invest</h3>
+          <div class="amount">$20,000</div>
+          <h4>Receive</h4>
+          <p>• 5% Additional Bonus Share</p>
+          <button class="invest-button2">
+            <a
+              href="https://republic.com/avawatz/invest?amount=%24100%2C000"
+              style="text-decoration: none; font-weight: bold"
+              >Invest $20,000</a
+            >
+          </button>
+        </div>
+
+        <div class="bonus-perk">
+          <h3>Invest</h3>
+          <div class="amount">$50,000</div>
+          <h4>Receive</h4>
+          <p>• 10% Additional Bonus Shares</p>
+          <button class="invest-button2">
+            <a
+              href="https://republic.com/avawatz/invest?amount=%24100%2C000"
+              style="text-decoration: none; font-weight: bold"
+              >Invest $50,000</a
+            >
+          </button>
+        </div>
+
+        <div class="bonus-perk">
+          <h3>Invest</h3>
+          <div class="amount">$100,000</div>
+          <h4>Receive</h4>
+          <p>• 15% Additional Bonus Shares</p>
+          <button class="invest-button2">
+            <a
+              href="https://republic.com/avawatz/invest?amount=%24100%2C000"
+              style="text-decoration: none; font-weight: bold"
+              >Invest $100,000</a
+            >
+          </button>
+        </div>
+        <div class="bonus-perk">
+          <h3>Invest</h3>
+          <div class="amount">$250,000</div>
+          <h4>Receive</h4>
+          <p>• 25% Additional Bonus Shares</p>
+          <button class="invest-button2">
+            <a
+              href="https://republic.com/avawatz/invest?amount=%24250%2C000"
+              style="text-decoration: none; font-weight: bold"
+              >Invest $250,000</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr
+    style="
+      margin: 40px;
+      border-color: #ddd;
+      border-width: 1px;
+      border-style: solid;
+    "
+  />
+  <section id="AboutTeam">
+    <div class="about-section">
+      <h2>About Avawatz</h2>
+      <hr class="blue_divider" />
+      <div class="about-content">
+        <div class="about-details-left">
+          <div class="detail-item">
+            Legal Name
+            <p>AvaWatz Company</p>
+          </div>
+          <div class="detail-item">
+            Founded
+            <p>Feb 2019</p>
+          </div>
+          <div class="detail-item">
+            Form
+            <p>Texas Corporation</p>
+          </div>
+        </div>
+        <div class="about-details-right">
+          <div class="detail-item">
+            Employees
+            <p>17</p>
+          </div>
+          <div class="detail-item">
+            Website
+            <p><a href="https://avawatz.com">avawatz.com</a></p>
+          </div>
+          <div class="detail-item">
+            Social Media
+            <p class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-medium"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="about-map">
+          Headquarters
+          <div class="map-container">
+            <!-- Replace this with an actual embedded map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13425.764113374854!2d-96.87788841788544!3d32.67642690000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e8f8f9e832b6b%3A0x5c7e73ebf682eb9d!2s3662%20W%20Camp%20Wisdom%20Rd%20Ste%202044%2C%20Dallas%2C%20TX%2075237%2C%20USA!5e0!3m2!1sen!2sin!4v1693245235615!5m2!1sen!2sin"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p>3662 West Camp Wisdom Road Suite 2044, Dallas, TX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr
+    style="
+      margin: 40px;
+      border-color: #ddd;
+      border-width: 1px;
+      border-style: solid;
+    "
+  />
+  <section id="Team">
+    <div class="team-section">
+      <h2>Avawatz Team</h2>
+      <hr class="blue_divider" />
+      <p class="team-subtitle">
+        Everyone helping build Avawatz, not limited to employees
+      </p>
+
+      <div class="team-container">
+        <div class="team-member" *ngFor="let member of teamMembers">
+          <img src="{{ member.image }}" alt="{{ member.name }}" />
+          <h3>{{ member.name }}</h3>
+          <p style="font-weight: 1.2em">{{ member.role }}</p>
+          <p>{{ member.description }}</p>
+          <a *ngIf="member.linkedin" [href]="member.linkedin" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr
+    style="
+      margin: 40px;
+      border-color: #ddd;
+      border-width: 1px;
+      border-style: solid;
+    "
+  />
+  <section id="Press">
+    <div class="press-section">
+      <h2>Press</h2>
+      <hr class="blue_divider" />
+      <div class="press-articles">
+        <div *ngFor="let article of articles" class="press-article">
+          <a [href]="article.link" target="_blank">
+            <div class="press-image">
+              <img [src]="article.image" alt="{{ article.title }}" />
+            </div>
+            <div class="press-content">
+              <h3>{{ article.title }}</h3>
+              <p class="source">{{ article.source }} · {{ article.date }}</p>
+              <p class="description">{{ article.description }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr
+    style="
+      margin: 40px;
+      border-color: #ddd;
+      border-width: 1px;
+      border-style: solid;
+    "
+  />
+  <section id="Risks">
+    <div
+      class="risks-section"
+      style="
+        align-items: center;
+        text-align: center;
+        margin: 0px auto;
+        padding: 0 20px;
+        max-width: 1100px;
+        justify-content: center;
+      "
+    >
+      <h2 style="text-align: center">Risks</h2>
+      <hr class="blue_divider" />
+      <div class="risks-container">
+        <div class="risks-list">
+          <ul>
+            <li *ngFor="let risk of displayedRisks">
+              <a
+                href="#"
+                (click)="selectRisk(risk, $event)"
+                [ngClass]="{ 'active-risk': selectedRisk === risk }"
+              >
+                {{ risk.title }}
+                <span *ngIf="selectedRisk === risk">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span
+                >
+              </a>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="show-all-link"
+            (click)="toggleShowAll($event)"
+            style="text-align: left"
+          >
+            {{ showAllRisks ? "Show less Risks" : "Show all Risks" }}
+          </a>
+        </div>
+
+        <div class="risk-content">
+          <p>{{ selectedRisk?.content }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Include the JavaScript file -->
+
+<div *ngIf="activeSection === 'updates'" class="section-content">
+  <div
+    class="timelinesection"
+    style="
+      align-items: center;
+      text-align: center;
+      margin: 0px auto;
+      padding: 0 20px;
+      margin-top: 40px;
+      max-width: 1100px;
+      justify-content: center;
+    "
+  >
+    <div class="timeline">
+      <div *ngFor="let entry of timeLine; let i = index">
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <div style="font-size: 2em">
+              {{ entry.date.split(" ")[0] }}&nbsp;{{ entry.date.split(" ")[1] }}
+            </div>
+            <div><br />{{ entry.date.split(" ")[2] }}</div>
+          </div>
+          <div class="timeline-content">
+            <h3>{{ entry.title }}</h3>
+            <p>{{ entry.detail }}</p>
+            <div class="timeline-footer">
+              <br />
+              <br />
+              <img
+                [src]="entry.authorImage"
+                alt="{{ entry.author }}"
+                class="author-img"
+              />
+              <div class="author-details">
+                <span class="author-name">{{ entry.author }}</span>
+                <br /><span class="company-name">{{ entry.company }}</span>
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="footer2">
+              <br />
+              <hr style="color: #d4d4d4; border-width: 1px" />
+              <br />
+              <span class="like">❤️ {{ entry.likes }}</span>
+              <span class="comments">💬 {{ entry.comments }} Comments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
